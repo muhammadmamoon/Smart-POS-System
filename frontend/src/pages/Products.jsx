@@ -32,7 +32,7 @@ export default function Products() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/products");
+        const res = await axios.get("https://smart-pos-system-b3o3-mv3a533vo-muhammadmamoons-projects.vercel.app/api/products");
         setProducts(Array.isArray(res.data) ? res.data : []);
       } catch (err) {
         setError("Failed to fetch products");

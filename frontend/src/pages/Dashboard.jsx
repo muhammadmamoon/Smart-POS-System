@@ -101,15 +101,15 @@ export default function Dashboard() {
   const { mutate } = useSWRConfig();
 
   const { data: invRaw, isLoading: invoicesLoading } = useSWR(
-    "http://localhost:3000/api/invoice/",
+    "https://smart-pos-system-b3o3-mv3a533vo-muhammadmamoons-projects.vercel.app/api/invoice/",
     fetcher
   );
   const { data: prodRaw, isLoading: productsLoading } = useSWR(
-    "http://localhost:3000/api/products",
+    "https://smart-pos-system-b3o3-mv3a533vo-muhammadmamoons-projects.vercel.app/api/products",
     fetcher
   );
   const { data: custRaw, isLoading: customersLoading } = useSWR(
-    "http://localhost:3000/api/purchases",
+    "https://smart-pos-system-b3o3-mv3a533vo-muhammadmamoons-projects.vercel.app/api/purchases",
     fetcher
   );
 
@@ -206,9 +206,9 @@ export default function Dashboard() {
   const COLORS = ["#ec4899", "#a855f7", "#3b82f6", "#22c55e", "#eab308", "#ef4444"];
 
   const refreshAll = () => {
-    mutate("http://localhost:3000/api/invoice/");
-    mutate("http://localhost:3000/api/products");
-    mutate("http://localhost:3000/api/purchases");
+    mutate("https://smart-pos-system-b3o3-mv3a533vo-muhammadmamoons-projects.vercel.app/api/invoice/");
+    mutate("https://smart-pos-system-b3o3-mv3a533vo-muhammadmamoons-projects.vercel.app/api/products");
+    mutate("https://smart-pos-system-b3o3-mv3a533vo-muhammadmamoons-projects.vercel.app/api/purchases");
   };
 
   useEffect(() => {

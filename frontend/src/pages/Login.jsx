@@ -15,7 +15,7 @@ export default function Login({ onLogin }) {
     setError("");
 
     try {
-      const res = await fetch("http://localhost:3000/api/login", {
+      const res = await fetch("https://smart-pos-system-b3o3-mv3a533vo-muhammadmamoons-projects.vercel.app/api/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),

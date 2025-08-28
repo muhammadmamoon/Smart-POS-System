@@ -16,7 +16,7 @@
     useEffect(() => {
       const fetchProducts = async () => {
         try {
-          const res = await axios.get("http://localhost:3000/api/products");
+          const res = await axios.get("https://smart-pos-system-b3o3-mv3a533vo-muhammadmamoons-projects.vercel.app/api/products");
           if (Array.isArray(res.data)) {
             setProducts(res.data);
           } else if (Array.isArray(res.data.products)) {
@@ -146,11 +146,11 @@
           change_returned: changeReturned,
         };
 
-        await axios.post("http://localhost:3000/api/invoice/create", payload);
+        await axios.post("https://smart-pos-system-b3o3-mv3a533vo-muhammadmamoons-projects.vercel.app/api/invoice/create", payload);
 
         for (let item of items) {
           const newStock = (item.stock || 0) - item.quantity;
-          await axios.put(`http://localhost:3000/api/products/${item._id}`, {
+          await axios.put(`https://smart-pos-system-b3o3-mv3a533vo-muhammadmamoons-projects.vercel.app/api/products/${item._id}`, {
             stock: newStock < 0 ? 0 : newStock,
           });
         }

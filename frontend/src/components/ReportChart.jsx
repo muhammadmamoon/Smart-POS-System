@@ -122,7 +122,7 @@ export default function ReportChart() {
         setLoading(true);
         setErr("");
 
-        const res = await fetch("http://localhost:3000/api/invoice/", {
+        const res = await fetch("https://smart-pos-system-b3o3-mv3a533vo-muhammadmamoons-projects.vercel.app/api/invoice/", {
           headers: { "Content-Type": "application/json" },
         });
 

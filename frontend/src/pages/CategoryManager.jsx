@@ -20,7 +20,7 @@ const CategoryManager = () => {
   const fetchCategories = async () => {
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:3000/api/categories");
+      const res = await fetch("https://smart-pos-system-b3o3-mv3a533vo-muhammadmamoons-projects.vercel.app/api/categories");
       const data = await res.json();
       setCategories(data);
     } catch (error) {

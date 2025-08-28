@@ -30,7 +30,7 @@ export default function Sales() {
   useEffect(() => {
     const fetchSales = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/invoice/");
+        const res = await fetch("https://smart-pos-system-b3o3-mv3a533vo-muhammadmamoons-projects.vercel.app/api/invoice/");
         if (!res.ok) throw new Error("Failed to fetch sales data");
 
         const json = await res.json();

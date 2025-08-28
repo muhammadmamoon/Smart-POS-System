@@ -519,7 +519,7 @@ export default function Settings() {
 
       try {
         setLoading(true);
-        const res = await fetch("http://localhost:3000/api/updatepassword", {
+        const res = await fetch("https://smart-pos-system-b3o3-mv3a533vo-muhammadmamoons-projects.vercel.app/api/updatepassword", {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({

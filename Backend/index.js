@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: "http://localhost:5173", // React frontend ka URL
+    origin: "https://smart-pos-system-iota.vercel.app", // React frontend ka URL
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })

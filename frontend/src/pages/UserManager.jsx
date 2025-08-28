@@ -16,7 +16,7 @@ export default function AdminPanel() {
   // ✅ Fetch all users from backend
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/createusers/users")
+      .get("https://smart-pos-system-b3o3-mv3a533vo-muhammadmamoons-projects.vercel.app/api/createusers/users")
       .then((res) => setUsers(res.data))
       .catch((err) => console.error("Error fetching users:", err));
   }, []);

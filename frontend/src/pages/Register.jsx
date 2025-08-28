@@ -35,7 +35,7 @@ export default function Register() {
       };
 
       const response = await axios.post(
-        "http://localhost:3000/api/register",
+        "https://smart-pos-system-b3o3-mv3a533vo-muhammadmamoons-projects.vercel.app/api/register",
         JSON.stringify(payload),
         {
           headers: {
